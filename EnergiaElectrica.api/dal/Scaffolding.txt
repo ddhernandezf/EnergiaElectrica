@@ -1,0 +1,5 @@
+﻿#Douglas
+Scaffold-DbContext "Server=DESKTOP-NDTELRU;Database=EnergiaElectrica;User Id=sa;Password=Letmein1.;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir dal/modelos -Context BaseDatos -ContextDir dal/context -UseDatabaseNames -Force
+
+#Samuel
+Scaffold-DbContext "Server=LAPTOP-KR6OVK32;Database=EnergiaElectrica;User Id=sa;Password=Letmein1.;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir dal/modelos -Context BaseDatos -ContextDir dal/context -UseDatabaseNames -Force
