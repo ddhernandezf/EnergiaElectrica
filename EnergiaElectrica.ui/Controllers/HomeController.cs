@@ -1,14 +1,12 @@
 ﻿using EnergiaElectrica.ui.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using EnergiaElectrica.ui.Filters;
 
 namespace EnergiaElectrica.ui.Controllers
 {
+    [ValidarAutenticacion]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

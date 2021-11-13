@@ -23,6 +23,7 @@ namespace EnergiaElectrica.api.dal.modelos
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public bool EnviarFactura { get; set; }
+        public string NumeroContador { get; set; }
 
         public virtual TipoMedidor MedidorNavigation { get; set; }
         public virtual TipoCliente TipoNavigation { get; set; }

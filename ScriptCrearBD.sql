@@ -24,7 +24,9 @@ create table [Cliente] (
 	[Direccion]			varchar(200) not null,
 	[Telefono]			varchar(8) not null,
 	[EnviarFactura]		bit not null,
+	[NumeroContador]	varchar(10) not null,
 	constraint pkCliente primary key ([Id]),
+	constraint uqCliente unique ([NumeroContador]),
 	constraint fkClienteTipocliente foreign key([Tipo]) references [TipoCliente]([Id]),
 	constraint fkClienteTipomedidor foreign key([Medidor]) references [TipoMedidor]([Id]),
 );

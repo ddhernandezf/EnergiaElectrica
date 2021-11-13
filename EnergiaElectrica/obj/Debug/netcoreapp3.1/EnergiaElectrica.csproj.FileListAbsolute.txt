@@ -1,9 +1,9 @@
 D:\github\EnergiaElectrica\EnergiaElectrica\bin\Debug\netcoreapp3.1\EnergiaElectrica.deps.json
 D:\github\EnergiaElectrica\EnergiaElectrica\bin\Debug\netcoreapp3.1\EnergiaElectrica.dll
 D:\github\EnergiaElectrica\EnergiaElectrica\bin\Debug\netcoreapp3.1\EnergiaElectrica.pdb
-D:\github\EnergiaElectrica\EnergiaElectrica\obj\Debug\netcoreapp3.1\EnergiaElectrica.csprojAssemblyReference.cache
 D:\github\EnergiaElectrica\EnergiaElectrica\obj\Debug\netcoreapp3.1\EnergiaElectrica.AssemblyInfoInputs.cache
 D:\github\EnergiaElectrica\EnergiaElectrica\obj\Debug\netcoreapp3.1\EnergiaElectrica.AssemblyInfo.cs
 D:\github\EnergiaElectrica\EnergiaElectrica\obj\Debug\netcoreapp3.1\EnergiaElectrica.csproj.CoreCompileInputs.cache
 D:\github\EnergiaElectrica\EnergiaElectrica\obj\Debug\netcoreapp3.1\EnergiaElectrica.dll
 D:\github\EnergiaElectrica\EnergiaElectrica\obj\Debug\netcoreapp3.1\EnergiaElectrica.pdb
+D:\github\EnergiaElectrica\EnergiaElectrica\obj\Debug\netcoreapp3.1\EnergiaElectrica.csprojAssemblyReference.cache

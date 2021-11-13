@@ -40,6 +40,10 @@ namespace EnergiaElectrica.api.dal.context
         {
             modelBuilder.Entity<Cliente>(entity =>
             {
+                entity.HasIndex(e => e.NumeroContador)
+                    .HasName("uqCliente")
+                    .IsUnique();
+
                 entity.Property(e => e.Correo)
                     .IsRequired()
                     .HasMaxLength(200)
@@ -53,6 +57,11 @@ namespace EnergiaElectrica.api.dal.context
                 entity.Property(e => e.NombreCompleto)
                     .IsRequired()
                     .HasMaxLength(120)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.NumeroContador)
+                    .IsRequired()
+                    .HasMaxLength(10)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Telefono)
