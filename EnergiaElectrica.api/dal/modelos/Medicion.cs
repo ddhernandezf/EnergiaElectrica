@@ -15,7 +15,7 @@ namespace EnergiaElectrica.api.dal.modelos
         }
 
         public long Id { get; set; }
-        public byte Anio { get; set; }
+        public short Anio { get; set; }
         public byte Mes { get; set; }
         public long Cliente { get; set; }
         public long Lectura { get; set; }

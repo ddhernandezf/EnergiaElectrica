@@ -40,7 +40,7 @@ create table [Usuario] (
 
 create table [Medicion] (
 	[Id]				bigint not null identity(1,1),
-	[Anio]				tinyint not null,
+	[Anio]				smallint not null,
 	[Mes]				tinyint not null,
 	[Cliente]			bigint not null,
 	[Lectura]			bigint not null,

@@ -79,3 +79,5 @@ D:\github\EnergiaElectrica\EnergiaElectrica.api\obj\Debug\netcoreapp3.1\EnergiaE
 D:\github\EnergiaElectrica\EnergiaElectrica.api\obj\Debug\netcoreapp3.1\EnergiaElectrica.api.pdb
 D:\github\EnergiaElectrica\EnergiaElectrica.api\obj\Debug\netcoreapp3.1\EnergiaElectrica.api.genruntimeconfig.cache
 D:\github\EnergiaElectrica\EnergiaElectrica.api\obj\Debug\netcoreapp3.1\EnergiaElectrica.api.csprojAssemblyReference.cache
+D:\github\EnergiaElectrica\EnergiaElectrica.api\bin\Debug\netcoreapp3.1\EnergiaElectrica.dll
+D:\github\EnergiaElectrica\EnergiaElectrica.api\bin\Debug\netcoreapp3.1\EnergiaElectrica.pdb

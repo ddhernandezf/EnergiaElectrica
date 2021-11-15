@@ -16,5 +16,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EnergiaElectrica\EnergiaElectrica.csproj" />
+  </ItemGroup>
+
 
 </Project>

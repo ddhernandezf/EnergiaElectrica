@@ -1495,6 +1495,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "EnergiaElectrica/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/EnergiaElectrica.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EnergiaElectrica.dll": {}
+        }
       }
     }
   },
@@ -5660,10 +5670,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "EnergiaElectrica/1.0.0": {
+      "type": "project",
+      "path": "../EnergiaElectrica/EnergiaElectrica.csproj",
+      "msbuildProject": "../EnergiaElectrica/EnergiaElectrica.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "EnergiaElectrica >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.20",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.20"
@@ -5710,7 +5726,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\github\\EnergiaElectrica\\EnergiaElectrica\\EnergiaElectrica.csproj": {
+              "projectPath": "D:\\github\\EnergiaElectrica\\EnergiaElectrica\\EnergiaElectrica.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

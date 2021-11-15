@@ -2,7 +2,6 @@
 using System.Linq;
 using EnergiaElectrica.api.dal;
 using EnergiaElectrica.api.dal.modelos;
-using EnergiaElectrica.api.filtros;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EnergiaElectrica.api.Controllers
