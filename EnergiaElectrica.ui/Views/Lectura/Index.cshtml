@@ -1,0 +1,55 @@
+﻿@model EnergiaElectrica.ViewModel.LecturaVista;
+
+<div class="HVcenter">
+    <div>
+        <div class="vwLogin" style="border-color: @ViewBag.CssClass">
+            <form asp-route="Login" id="frmLogin" name="frmLogin">
+                <div class="form-group">
+                    <input id="contador" class="form-control" placeholder="Número contador" asp-for="contador" autofocus>
+                    <span asp-validation-for="contador" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input id="lectura" class="form-control" placeholder="Lectura" asp-for="lectura" autofocus>
+                    <span asp-validation-for="lectura" class="text-danger"></span>
+                </div>
+                @if (Model.datos != null)
+                {
+                    <div class="form-group">
+                        <input id="montoCobrar" class="form-control" placeholder="Cobro" asp-for="montoCobrar" autofocus disabled="disabled">
+                        <span asp-validation-for="montoCobrar" class="text-danger"></span>
+                    </div>
+                }
+
+                <div class="mt-4 mb-4">
+                    <button id="ProcesarLectura" class="btn btn-primary" name="button" value="lectura">Procesar Lectura</button>
+                    @if (Model.datos != null)
+                    {
+                        <button id="ProcesarCobro" class="btn btn-secundary" name="button" value="cobro">Procesar Cobro</button>
+                    }
+                </div>
+
+                @Html.ValidationMessage("error")
+
+                @if (Model.datos != null)
+                {
+                    <div class="form-group">
+                        <label>Cliente</label>
+                        <input id="nombreCliente" class="form-control" placeholder="Cliente" asp-for="datos.cliente.Nombre" autofocus disabled="disabled">
+                    </div>
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input id="direccionCliente" class="form-control" placeholder="Cliente" asp-for="datos.cliente.Direccion" autofocus disabled="disabled">
+                    </div>
+                    <div class="form-group">
+                        <label>Lectura anterior</label>
+                        <input id="lecturaAnterior" class="form-control" placeholder="Cliente" asp-for="datos.lecturaAnterior" autofocus disabled="disabled">
+                    </div>
+                    <div class="form-group">
+                        <label>KW Consumidos</label>
+                        <input id="consumido" class="form-control" placeholder="Cliente" asp-for="datos.consumido" autofocus disabled="disabled">
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</div>

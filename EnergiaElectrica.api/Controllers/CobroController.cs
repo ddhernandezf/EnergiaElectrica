@@ -41,36 +41,39 @@ namespace EnergiaElectrica.api.Controllers
                     })
                     .FirstOrDefault();
 
-                resultado.cliente = db.Cliente
-                    .Include(x => x.TipoNavigation)
-                    .Include(x => x.MedidorNavigation)
-                    .Where(x => x.NumeroContador.Equals(numeroContador))
-                    .Select(x => new ClienteModel()
-                    {
-                        TipoCliente = x.TipoNavigation.Nombre,
-                        TipoMedidor = x.MedidorNavigation.Nombre,
-                        Nombre = x.NombreCompleto,
-                        Direccion = x.Direccion,
-                        Telefono = x.Telefono,
-                        NumeroContador = x.NumeroContador
-                    })
-                    .FirstOrDefault();
+                if (resultado != null)
+                {
+                    resultado.cliente = db.Cliente
+                        .Include(x => x.TipoNavigation)
+                        .Include(x => x.MedidorNavigation)
+                        .Where(x => x.NumeroContador.Equals(numeroContador))
+                        .Select(x => new ClienteModel()
+                        {
+                            TipoCliente = x.TipoNavigation.Nombre,
+                            TipoMedidor = x.MedidorNavigation.Nombre,
+                            Nombre = x.NombreCompleto,
+                            Direccion = x.Direccion,
+                            Telefono = x.Telefono,
+                            NumeroContador = x.NumeroContador
+                        })
+                        .FirstOrDefault();
 
-                resultado.historial = db.Medicion
-                    .Include(x => x.ClienteNavigation)
-                    .Where(x =>
-                        x.ClienteNavigation.NumeroContador.Equals(numeroContador) &&
-                        x.Anio.Equals(anio))
-                    .OrderByDescending(x => x.Mes)
-                    .Select(x => new HistorialLectura()
-                    {
-                        fecha = x.Fecha,
-                        mes = x.Mes,
-                        anio = x.Anio,
-                        lectura = x.Lectura,
-                        monto = x.MontoCobrar
-                    })
-                    .ToList();
+                    resultado.historial = db.Medicion
+                        .Include(x => x.ClienteNavigation)
+                        .Where(x =>
+                            x.ClienteNavigation.NumeroContador.Equals(numeroContador) &&
+                            x.Anio.Equals(anio))
+                        .OrderByDescending(x => x.Mes)
+                        .Select(x => new HistorialLectura()
+                        {
+                            fecha = x.Fecha,
+                            mes = x.Mes,
+                            anio = x.Anio,
+                            lectura = x.Lectura,
+                            monto = x.MontoCobrar
+                        })
+                        .ToList();
+                }
 
                 return Ok(resultado);
             }
