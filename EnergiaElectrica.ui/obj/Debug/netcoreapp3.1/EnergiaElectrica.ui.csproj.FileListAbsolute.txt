@@ -74,3 +74,7 @@ D:\github\EnergiaElectrica\EnergiaElectrica.ui\obj\Debug\netcoreapp3.1\EnergiaEl
 D:\github\EnergiaElectrica\EnergiaElectrica.ui\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 D:\github\EnergiaElectrica\EnergiaElectrica.ui\obj\Debug\netcoreapp3.1\EnergiaElectrica.ui.csprojAssemblyReference.cache
 D:\github\EnergiaElectrica\EnergiaElectrica.ui\bin\Debug\netcoreapp3.1\RestSharp.dll
+D:\github\EnergiaElectrica\EnergiaElectrica.ui\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\github\EnergiaElectrica\EnergiaElectrica.ui\bin\Debug\netcoreapp3.1\EnergiaElectrica.dll
+D:\github\EnergiaElectrica\EnergiaElectrica.ui\bin\Debug\netcoreapp3.1\EnergiaElectrica.pdb
+D:\github\EnergiaElectrica\EnergiaElectrica.ui\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Index.cshtml.g.cs

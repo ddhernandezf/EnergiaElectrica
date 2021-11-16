@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kGwvb0GyZMGApsE8ARvpTcbxpOzBuYlBRri9qT4g3tNvV+tJcbvCikIqQLNvRXhC9Zq1YMaCtb1h6I749gw9DQ==",
+  "dgSpecHash": "tAmgtcOt4u6f1XAkXtVyL46aDpT4t13GCU1HH8KwvJldEW2lSHuE+OBgp7vQ0K60F/MXvqxJO7A6U5ogAmCutw==",
   "success": true,
   "projectFilePath": "D:\\github\\EnergiaElectrica\\EnergiaElectrica.ui\\EnergiaElectrica.ui.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ddhernandezf\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\ddhernandezf\\.nuget\\packages\\restsharp\\106.13.0\\restsharp.106.13.0.nupkg.sha512"
   ],
   "logs": []

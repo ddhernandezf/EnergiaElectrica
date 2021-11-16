@@ -1,0 +1,30 @@
+﻿@model EnergiaElectrica.ViewModel.VistaCliente;
+
+<div class="HVcenter">
+    <div>
+        <h1>Clientes</h1>
+        <div>
+            <table class="table table-bordered table-responsive table-hover">
+                <thead>
+                <tr>
+                    <td>Tipo Cliente</td>
+                    <td>Tipo Medidor</td>
+                    <td>Nombre</td>
+                    <td>Dirección</td>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.clientes)
+                {
+                    <tr>
+                        <td>@item.tipoNombre</td>
+                        <td>@item.medidorNombre</td>
+                        <td>@item.nombre</td>
+                        <td>@item.direccion</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
