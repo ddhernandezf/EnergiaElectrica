@@ -1,1 +1,7 @@
 .vs
+EnergiaElectrica.api/bin/
+EnergiaElectrica.api/obj/
+EnergiaElectrica.ui/bin/
+EnergiaElectrica.ui/obj/
+EnergiaElectrica/bin/
+EnergiaElectrica/obj/
