@@ -13,13 +13,6 @@ namespace EnergiaElectrica.ui.Controllers
             return View();
         }
 
-        public IActionResult CerrarSesion()
-        {
-            HttpContext.Session.Clear();
-            
-            return Redirect("/");
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Index(ModeloCredenciales data)
@@ -40,6 +33,13 @@ namespace EnergiaElectrica.ui.Controllers
             }
 
             return View(data);
+        }
+
+        public IActionResult CerrarSesion()
+        {
+            HttpContext.Session.Clear();
+
+            return Redirect("/");
         }
     }
 }

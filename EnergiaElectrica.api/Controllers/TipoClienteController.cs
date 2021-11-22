@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using EnergiaElectrica.api.dal;
-using EnergiaElectrica.api.dal.modelos;
+using EnergiaElectrica.ViewModel;
 
 namespace EnergiaElectrica.api.Controllers
 {
@@ -18,7 +18,13 @@ namespace EnergiaElectrica.api.Controllers
         {
             try
             {
-                List<TipoCliente> datos = db.TipoCliente.ToList();
+                List<TipoCliente> datos = db.TipoCliente
+                    .Select(x => new TipoCliente()
+                    {
+                        id = x.Id,
+                        nombre = x.Nombre
+                    })
+                    .ToList();
 
                 return Ok(datos);
             }

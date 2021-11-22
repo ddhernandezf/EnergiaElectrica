@@ -1,0 +1,64 @@
+﻿@model EnergiaElectrica.ViewModel.ClienteCrudView;
+
+<div class="HVcenter">
+    <div>
+        <div class="vwLogin" style="border-color: @ViewBag.CssClass">
+            <form asp-route="Login" id="frmLogin" name="frmLogin">
+                <div class="form-group">
+                    <input id="idcliente" class="form-control" asp-for="formulario.id" disabled="disabled">
+                </div>
+                <div class="form-group">
+                    <label>Tipo de cliente</label>
+                    @Html.DropDownListFor(m => m.formulario.tipo, Model.tipoCliente
+                        .Select(x => new SelectListItem()
+                        {
+                            Text = x.nombre,
+                            Value = x.id.ToString()
+                        }))
+                    <span asp-validation-for="formulario.tipo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de medidor</label>
+                    @Html.DropDownListFor(m => m.formulario.medidor, Model.tipoMedidor
+                        .Select(x => new SelectListItem()
+                        {
+                            Text = x.nombre,
+                            Value = x.id.ToString()
+                        }))
+                    <span asp-validation-for="formulario.medidor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Nombre completo</label>
+                    <input id="nombre" class="form-control" asp-for="formulario.nombre">
+                    <span asp-validation-for="formulario.nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Dirección</label>
+                    <input id="direccion" class="form-control" asp-for="formulario.direccion">
+                    <span asp-validation-for="formulario.direccion" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input id="correo" class="form-control" asp-for="formulario.correo">
+                    <span asp-validation-for="formulario.correo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input id="telefono" class="form-control" asp-for="formulario.telefono">
+                    <span asp-validation-for="formulario.telefono" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Contador</label>
+                    <input id="numeroContador" class="form-control" asp-for="formulario.numeroContador">
+                    <span asp-validation-for="formulario.numeroContador" class="text-danger"></span>
+                </div>
+                <div class="mt-4 mb-4">
+                    <button id="ProcesarLectura" class="btn btn-primary" name="button" value="lectura">Guardar</button>
+                    @Html.ActionLink("Cancelar", "Index", "Cliente")
+                </div>
+
+                @Html.ValidationMessage("error")
+            </form>
+        </div>
+    </div>
+</div>
