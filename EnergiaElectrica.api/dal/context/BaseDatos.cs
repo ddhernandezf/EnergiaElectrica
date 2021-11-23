@@ -84,8 +84,6 @@ namespace EnergiaElectrica.api.dal.context
 
             modelBuilder.Entity<Factura>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
                 entity.Property(e => e.Fecha).HasColumnType("datetime");
 
                 entity.HasOne(d => d.ClienteNavigation)

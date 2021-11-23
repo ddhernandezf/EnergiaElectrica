@@ -10,7 +10,7 @@ namespace EnergiaElectrica.ViewModel
 
         [Required(ErrorMessage = "*")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Solo números")]
-        public string lectura { get; set; }
+        public long lectura { get; set; }
 
         public decimal montoCobrar { get; set; }
 

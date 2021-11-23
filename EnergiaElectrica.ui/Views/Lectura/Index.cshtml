@@ -20,13 +20,17 @@
                     </div>
                 }
 
-                <div class="mt-4 mb-4">
-                    <button id="ProcesarLectura" class="btn btn-primary" name="button" value="lectura">Procesar Lectura</button>
-                    @if (Model.datos != null)
-                    {
-                        <button id="ProcesarCobro" class="btn btn-secundary" name="button" value="cobro">Procesar Cobro</button>
-                    }
-                </div>
+            <div class="mt-4 mb-4">
+                <button id="ProcesarLectura" class="btn btn-primary" name="button" value="lectura">Procesar Lectura</button>
+                @if (Model.datos != null)
+                {
+                    <button id="ProcesarCobro" class="btn btn-secundary" name="button" value="cobro">Procesar Cobro</button>
+                }
+                @if (ViewBag.factura != null)
+                {
+                    @Html.ActionLink("Descargar", "Descargar", "Lectura", new { factura = ViewBag.factura })
+                }
+            </div>
 
                 @Html.ValidationMessage("error")
 

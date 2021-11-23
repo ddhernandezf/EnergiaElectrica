@@ -1,0 +1,10 @@
+﻿@model EnergiaElectrica.ViewModel.LecturaVista;
+
+<div class="HVcenter">
+    <div>
+        <div class="vwLogin" style="border-color: @ViewBag.CssClass">
+            <h1>Factura: @ViewBag.factura</h1>
+            @Html.ActionLink("Descargar", "Descargar", "Lectura", new { factura = ViewBag.factura })
+        </div>
+    </div>
+</div>
